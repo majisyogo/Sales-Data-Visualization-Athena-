@@ -5,18 +5,16 @@ This repository is a sample project to analyze and visualize sales data using **
 ## Folder Structure
 【Sales Data Visualization Project】
 ⇒data(CSV)
-⇒queries/ # Athena SQL
-⇒scripts/ # CLI scripts
+⇒query Athena(SQL)
+⇒script
 ⇒README.md
 
 ## Prerequisites
-
 - AWS account (QuickSight account already set up)
 - AWS CLI v2 installed
 - S3 bucket for Athena available
 
 ## Workflow
-
 1. Place sample CSV files in `data/`
 2. Create Athena tables using SQL in `queries/`
 3. Execute Athena queries via `scripts/run_athena_query.sh`
@@ -24,7 +22,6 @@ This repository is a sample project to analyze and visualize sales data using **
 5. Visualize data in QuickSight dashboards
 
 ## Example Analyses
-
 - Monthly sales trends (line chart)
 - Customer sales ranking (bar chart)
 - Sales performance by salesperson
