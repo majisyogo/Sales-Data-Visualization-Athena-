@@ -1,14 +1,13 @@
-# Sales Data Visualization Project
+# 【Sales Data Visualization Project】
 
 This repository is a sample project to analyze and visualize sales data using **S3 → Athena → QuickSight** with AWS CLI.
 
 ## Folder Structure
-
-sales-analytics-demo/
-├─ data/ # CSV or sample data
-├─ queries/ # Athena SQL
-├─ scripts/ # CLI scripts
-└─ README.md
+【Sales Data Visualization Project】
+⇒data(CSV)
+⇒queries/ # Athena SQL
+⇒scripts/ # CLI scripts
+⇒README.md
 
 ## Prerequisites
 
