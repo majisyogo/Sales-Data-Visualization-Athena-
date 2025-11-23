@@ -13,13 +13,16 @@ ATHENA_SQL_FILE = "queries/create_table.sql"
 QUICKSIGHT_ACCOUNT_ID = "123456789012"  # ←Use your own account number.
 QUICKSIGHT_NAMESPACE = "default"
 DATASET_NAME = "AnalyticsDataset"
-	DATA_SOURCE_NAME = "AthenaDataSource"
+DATA_SOURCE_NAME = "AthenaDataSource"
 
 
-# Create Athena client
+#【Create Athena client(entry point)】(SQL⇔Python⇔Athena)
 athena = boto3.client("athena", region_name=REGION)
 
-# Read SQL file
+##An entry point to access Athena from Python.
+##Through this entry point, you can send SQL queries and check the query status.
+
+# Read SQL
 with open(ATHENA_SQL_FILE, "r") as f:
     query_string = f.read()
 
